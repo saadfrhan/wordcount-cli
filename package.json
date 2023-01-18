@@ -1,6 +1,6 @@
 {
   "name": "wordcount-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple Word Counter CLI",
   "homepage": "https://github.com/saadfrhan/node-inquirer-word-count-cli#readme",
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node dist/index",
+    "start": "tsc && node dist/index.js",
     "build": "tsc"
   },
   "bin": "dist/index.js",

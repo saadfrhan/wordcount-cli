@@ -1,6 +1,6 @@
 {
   "name": "wordcount-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple Word Counter CLI",
   "homepage": "https://github.com/saadfrhan/node-inquirer-word-count-cli#readme",
   "type": "module",
@@ -8,12 +8,13 @@
     "type": "git",
     "url": "git+https://github.com/saadfrhan/node-inquirer-word-count-cli.git"
   },
-  "main": "src/index",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node dist/index",
+    "start": "tsc && node dist/index.js",
     "build": "tsc"
   },
-  "bin": "./dist/index.js",
+  "bin": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "chalk-animation": "^2.0.3",
     "inquirer": "^9.1.0",

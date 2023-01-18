@@ -6,6 +6,7 @@ import chalkAnimation from "chalk-animation";
 inquirer.registerPrompt('autocomplete', inquirerPrompt);
 
 const sleep = (ms: number = 2000) => new Promise(resolve => setTimeout(resolve, ms));
+
 (async () => {
   const rainbowTitle = chalkAnimation.rainbow('Welcome to the ATM!');
   await sleep();

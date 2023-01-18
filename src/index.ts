@@ -7,10 +7,13 @@ inquirer.registerPrompt('autocomplete', inquirerPrompt);
 
 const sleep = (ms: number = 2000) => new Promise(resolve => setTimeout(resolve, ms));
 
-(async () => {
-  const rainbowTitle = chalkAnimation.rainbow('Welcome to the ATM!');
+async function welcome() {
+  const rainbowTitle = chalkAnimation.rainbow('Welcome!');
   await sleep();
   rainbowTitle.stop();
+}
+
+async function main() {
   await inquirer.prompt([{
     type: 'autocomplete',
     message: 'Please enter text:',
@@ -19,4 +22,7 @@ const sleep = (ms: number = 2000) => new Promise(resolve => setTimeout(resolve, 
     searchText: 'Counting...'
   }]);
   console.log('Thanks for using this Word Counter CLI.')
-})();
+}
+
+await welcome();
+await main();

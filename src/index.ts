@@ -21,7 +21,7 @@ async function main() {
     message: 'Please enter text:',
     name: 'text',
     source: countWords,
-    searchText: 'Counting...'
+    searchText: 'Counting...',
   }]);
   console.log('Thanks for using this Word Counter CLI.')
 }
